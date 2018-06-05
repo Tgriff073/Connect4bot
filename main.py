@@ -4,7 +4,7 @@ Created on Mon Jun  4 13:46:07 2018
 
 @author: thomas
 """
-import numpy as np
+
 from game import Game
 
                  

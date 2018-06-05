@@ -11,6 +11,7 @@ and alpha beta pruining to reduce the search space).
 """
 
 from connect4 import Connect4
+import numpy as np
 #########################################################################################   
 class Game:
     
@@ -39,13 +40,14 @@ class Game:
         
         
 ##############################################################
-        def run_game(self):
-            #while there are still available slots (there is only a possibilty of 42 valid turns) get either 
-            #the player move or AI move, then print the board. 
-            while self.turn < 42:
-                self.get_move()
-                self.board.print_board()
-            print ("Game over!")
+                
+    def run_game(self):
+        #while there are still available slots (there is only a possibilty of 42 valid turns) get either 
+        #the player move or AI move, then print the board. 
+        while self.turn < 42:
+            self.get_move()
+            self.board.print_board()
+        print ("Game over!")
 ##############################################################
          
     def get_move(self):
