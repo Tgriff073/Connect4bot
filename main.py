@@ -13,4 +13,3 @@ def main():
     g.start_game()
     g.run_game()
 main()
-    
